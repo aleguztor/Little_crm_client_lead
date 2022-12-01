@@ -20,8 +20,7 @@ public class LoginImplementation implements LoginService{
 	@Override
 	public List<Login> findAll() {
 		
-		 Login login= new Login("solera@solera.com","solera");
-		 loginRepository.save(login);
+		 
 		return loginRepository.findAll();
 	}
 

@@ -32,8 +32,7 @@ export default function Menu(props){
             // console.log(post.name);
       //   })
       // }, [])
-
-
+     
 
       //GET ALL USERS
       useEffect(() => {
@@ -88,12 +87,10 @@ export default function Menu(props){
       };
       //////////////////////////////////////////////////
 
-     
-
-        const navigate = useNavigate();
         
         
           if(getUsers!=null){
+           
     return(
         <>
         <div>

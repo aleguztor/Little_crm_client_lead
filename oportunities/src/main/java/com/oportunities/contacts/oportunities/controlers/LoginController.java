@@ -38,13 +38,7 @@ public class LoginController {
 	
 	
 	
-	
-	public LoginController() {
-		 Login login= new Login("solera@solera.com","solera");
-		
-		users.add(login);
-				 
-	}
+
 	
 	@GetMapping("/loggers")
 	public ResponseEntity<?> getLoggers() {

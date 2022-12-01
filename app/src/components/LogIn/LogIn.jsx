@@ -7,7 +7,9 @@ export default function LogIn(props){
     const navigate = useNavigate();
     const [username, setusername] = useState("");
     const [password, setpassword] = useState("");
+
     
+   
 
     const users = [{ username: "solera@solera.com", password: "solera" }];
     const handleSubmit = (e) => {
@@ -15,10 +17,12 @@ export default function LogIn(props){
     e.preventDefault();
     const account = users.find((user) => user.username === username);
     if (account && account.password === password) {
-      // props.validacion=true;
-      props.validacion(true);
-    navigate("/menu");
-  
+      
+       sessionStorage.setItem('validacion', true);
+      navigate("/menu");
+    
+        window.location.replace('');
+       
 
     }else{
       alert("Error de usuario")

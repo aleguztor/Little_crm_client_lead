@@ -5,7 +5,7 @@ export function FooterMio(props){
 
     function cambiarEstado(){
        
-      props.validacion(false);
+         sessionStorage.setItem('validacion', false);
       
         navigate("/");
      
