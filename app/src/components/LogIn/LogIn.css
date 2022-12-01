@@ -1,0 +1,69 @@
+.logincontainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(195,181,255);
+background: linear-gradient(90deg, rgba(195,181,255,1) 0%, rgba(255,190,179,1) 100%);
+}
+.logincontainer h1{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.755);
+    margin-bottom: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+
+
+}
+.login{
+    width: 300px;
+    height: 150px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    box-shadow:inset 5px 5px 10px rgba(0, 0, 0, 0.182);
+    border-radius: 20px;
+    font-weight: 500;
+
+}
+.login label{
+    color: white;
+    margin: 5px;
+}
+.login .button{
+    /* text-transform: uppercase; */
+    margin: 10px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: 150ms all;
+}
+.login .button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.26);
+}
+.login input{
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.26);
+    padding: 10px;
+}
+#error{
+    
+    content: "Error of credentials ";
+ 
+    color: red;
+}

@@ -1,0 +1,82 @@
+h2{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+    background: linear-gradient(90deg, rgba(195,181,255,1) 0%, rgba(255,190,179,1) 100%);
+    color: white;
+    font-size: 40px;
+    
+}
+:root{
+    --primary-color:#C3B5FF;
+    --secondary-color:#AE9CFF;
+    --yellow:#FFF28F;
+    --verde:#A8FFDA;
+    --rosa:#FFBEB3;
+  
+  }
+  .containermenu{
+       background: linear-gradient(90deg, rgba(195,181,255,1) 0%, rgba(255,190,179,1) 100%);
+
+    width: 100%;
+    height: 100%;
+   
+
+  }
+  .form-entrada{
+  margin-top: 10px;
+  margin-bottom: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .form-menu{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.196);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+     background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+  .form-menu button{
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 150ms all;
+  }
+  .form-menu button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  .form-menu input{
+    border: none;
+    box-shadow:inset 5px 5px 10px rgba(0, 0, 0, 0.182);
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 20px;
+  }
+  .form-menu label{
+padding: 10px;
+width: 60%;
+  }
+  .containermenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+padding-bottom: 80px;
+ }
