@@ -18,58 +18,56 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.oportunities.contacts.oportunities.entity.Login;
 import com.oportunities.contacts.oportunities.entity.User;
+import com.oportunities.contacts.oportunities.interfaces.LoginService;
 import com.oportunities.contacts.oportunities.interfaces.UserService;
 import com.oportunities.contacts.oportunities.repositories.*;
+
 @RestController
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.PUT, RequestMethod.POST, RequestMethod.DELETE})
-public class UserController {
+public class LoginController {
 	
 	@Autowired
-	UserService service;
+	LoginRepository repository;
 	
-	@GetMapping("/")
-	public ResponseEntity<?> getUser() {
+	@Autowired
+	LoginService service;
+	
+	@GetMapping("/loggers")
+	public ResponseEntity<?> getLoggers() {
 	    
-	    List<User> getUser = service.findAll();
+	    List<Login> getLoggers = service.findAll();
 
-	    return new ResponseEntity(getUser, HttpStatus.OK);
+	    return new ResponseEntity(getLoggers, HttpStatus.OK);
 	}
-	 
-	 @PostMapping("/")
-	    public User registerUser(@RequestBody User userModel) {
+	
+	@PostMapping("/loggers")
+	public Login createLogger(@RequestBody Login logger) {
 	    
-	        User userSaved = service.userNew(userModel);
+	    Login newlog=service.loginNew(logger);
+
+	    return newlog;
+	}
+	 @PutMapping("/login")
+	    public Login logOutUser(@RequestBody Login userModel) {
+	       
+	        Login userSaved = service.logIn(userModel);
 	        
-	     
+	       // return the saved data and an Okay.
+	        return userSaved;
+	    }
+	 @PutMapping("/logout")
+	    public Login logInUser(@RequestBody Login userModel) {
+	       
+	        Login userSaved = service.logOut(userModel);
+	        
+	       // return the saved data and an Okay.
 	        return userSaved;
 	    }
 	 
-	 @GetMapping("/{id}")
-		public ResponseEntity<?> getUserById(@PathVariable Long id) {
-		    
-		 User getUser=  service.findById(id);
-
-		    return new ResponseEntity(getUser, HttpStatus.OK);
-		}
-	 @PutMapping("/{id}/tipoDeOportunidad/{oportunidad}")
-		public ResponseEntity<?> putStateToOportunity(@PathVariable Long id,@PathVariable String oportunidad) {
-		    
-		 User user =service.findById(id);
-		 User getUser=  service.userChangeToOportunity(user, oportunidad);
-		 
-		    return new ResponseEntity(getUser, HttpStatus.OK);
-		}
-	 @PutMapping("/{id}/tipoDeCliente/{cliente}")
-		public ResponseEntity<?> putStateToClient(@PathVariable Long id,@PathVariable String cliente) {
-		    
-		 User user =service.findById(id);
-		 User getUser=  service.userChangeToClient(user, cliente);
-
-		    return new ResponseEntity(getUser, HttpStatus.OK);
-		}
-	 @DeleteMapping("/{id}")
+	 @DeleteMapping("/loggers/{id}")
 	 public void deleteUser(@PathVariable Long id) {
-		 service.deleteUser(id);
+		 repository.deleteById(id) ;
 	 }
 }

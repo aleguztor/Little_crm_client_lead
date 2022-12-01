@@ -2,10 +2,14 @@ package com.oportunities.contacts.oportunities.entity;
 
 import java.util.Objects;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name="loggers")
 public class Login {
 	
 	@Id
@@ -14,7 +18,9 @@ public class Login {
 	private String email;
 	private String password;
 	private boolean logedstatus;
-	
+	public Login() {
+		super();
+	}
 	public Login(String email, String password) {
 		
 		super();
