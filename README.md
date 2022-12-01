@@ -18,6 +18,8 @@ HOW TO START:
 
 - Start React Js app.
 
+- Log in credentials: Email: solera@solera.com || Password: solera
+
 FINAL DOCUMENT API REST DOCUMENTATION
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -27,7 +29,9 @@ HOW WORTH THE APPLICATION AND WHAT YOU WILL SEE:
 FIRST: 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-PETICIONES API REST DISPONIBLES // http://localhost:8686/
+API REST DOCUMENTATION
+
+- ENTIDAD USER (CONTACTO, OPORTUNIDAD Y CLIENTE)
 
 GET ALL USERS:
 http://localhost:8686/
@@ -46,3 +50,24 @@ http://localhost:8686/{id}/tipoDeCliente/{cliente}
 
 DELETE USER:
 http://localhost:8686/{id}
+
+- ENTIDAD LOGIN (CONTACTO, OPORTUNIDAD Y CLIENTE)
+
+GET ALL LOGGERS / POST LOGGER:
+http://localhost:8686/loggers
+
+PUT LOGGER TO LOGIN:
+http://localhost:8686/login
+
+PUT LOGGER TO LOGOUT:
+http://localhost:8686/logout
+
+DELETE LOGGER BY ID:
+http://localhost:8686/loggers/{id}
+
+
+
+
+
+
+
