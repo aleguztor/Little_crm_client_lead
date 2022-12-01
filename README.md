@@ -23,8 +23,11 @@ This App is made for enterprises who want see the Contacts, Opportunities with t
 We have got only 2 Entities: User and Logger.
 User can be everything you want changing 3 booleans: isContact, isOportunity or isClient. The application make that.
 Let's see the app.
+***LOG IN***
+![Log In Image](https://github.com/aleguztor/Week6_AppContacts/blob/main/imagesofApp/LogIn.png)
 
-
+***WORTH OF APP***
+![Worth Of APp Image](https://github.com/aleguztor/Week6_AppContacts/blob/main/imagesofApp/Worth%20Of%20app.png)
 ## Api Rest Documentation
 
 > ***[http://localhost:8686/](http://localhost:8686/)***
