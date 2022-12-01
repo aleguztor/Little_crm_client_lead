@@ -1,8 +1,7 @@
-# Week6_AppContacts
-# Week6_AppContacts
+## Week6_AppContacts 
 
 
-CONTENT:
+***CONTENT:***
 
 - Folder "app": React Js app for Front End.
 
@@ -10,7 +9,7 @@ CONTENT:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-HOW TO START:
+***HOW TO START:***
 
 - Download both folders.
 
@@ -20,16 +19,15 @@ HOW TO START:
 
 - Log in credentials: Email: solera@solera.com || Password: solera
 
-FINAL DOCUMENT API REST DOCUMENTATION
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-HOW WORTH THE APPLICATION AND WHAT YOU WILL SEE:
+***HOW WORTH THE APPLICATION AND WHAT YOU WILL SEE:***
 
 FIRST: 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-API REST DOCUMENTATION
+***API REST DOCUMENTATION***
 
 - ENTIDAD USER (CONTACTO, OPORTUNIDAD Y CLIENTE)
 
