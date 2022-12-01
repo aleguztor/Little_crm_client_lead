@@ -25,6 +25,22 @@ User can be everything you want changing 3 booleans: isContact, isOportunity or 
 Let's see the app.
 
 
+## Api Rest Documentation
+
+> ***[http://localhost:8686/](http://localhost:8686/)***
+
+| GET USER/S | POST USER | PUT OPORTUNITY OR CLIENT|DELETE USER |
+|--   |--    |--  |--|
+|[/](http://localhost:8686/)|[/](http://localhost:8686/)|[/{id}/tipoDeOportunidad/{oportunidad}](http://localhost:8686/{id}/tipoDeOportunidad/{oportunidad})|[/id](http://localhost:8686/{id})
+|  [/id](http://localhost:8686/{id})   |      |[/{id}/tipoDeCliente/{cliente}](http://localhost:8686/{id}/tipoDeCliente/{cliente}) 
+----------------
+| GET LOGGER/S | POST LOGGER| PUT LOG IN/OUT|DELETE ID
+|--   |--    |--  |--|
+|[/loggers](http://localhost:8686/loggers)|[/loggers](http://localhost:8686/loggers)|[/login](http://localhost:8686/login)        [/logout](http://localhost:8686/logout)|[/loggers/{id}](http://localhost:8686/loggers/%7Bid%7D)
+
+
+
+
 
 
 
