@@ -28,11 +28,23 @@ import com.oportunities.contacts.oportunities.repositories.*;
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.PUT, RequestMethod.POST, RequestMethod.DELETE})
 public class LoginController {
 	
+	private static List<Login> users = new ArrayList<Login>();
+	
 	@Autowired
 	LoginRepository repository;
 	
 	@Autowired
 	LoginService service;
+	
+	
+	
+	
+	public LoginController() {
+		 Login login= new Login("solera@solera.com","solera");
+		
+		users.add(login);
+				 
+	}
 	
 	@GetMapping("/loggers")
 	public ResponseEntity<?> getLoggers() {
@@ -49,6 +61,7 @@ public class LoginController {
 
 	    return newlog;
 	}
+
 	 @PutMapping("/login")
 	    public Login logOutUser(@RequestBody Login userModel) {
 	       

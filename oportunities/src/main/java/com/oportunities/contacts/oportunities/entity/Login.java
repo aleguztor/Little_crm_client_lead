@@ -12,6 +12,7 @@ import jakarta.persistence.Table;
 @Table(name="loggers")
 public class Login {
 	
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

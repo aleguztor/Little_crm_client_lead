@@ -1,11 +1,11 @@
 import './footer.css'
 import { Navigate,useNavigate } from 'react-router-dom';
-export function FooterMio(){
+export function FooterMio(props){
     const navigate = useNavigate();
 
     function cambiarEstado(){
        
-      
+      props.validacion(false);
       
         navigate("/");
      

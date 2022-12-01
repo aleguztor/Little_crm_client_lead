@@ -2,20 +2,26 @@ import './LogIn.css';
 // import './App.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-export default function LogIn(){
+export default function LogIn(props){
    
     const navigate = useNavigate();
     const [username, setusername] = useState("");
     const [password, setpassword] = useState("");
-   
+    
 
-    const users = [{ username: "soler@solera.com", password: "solera" }];
+    const users = [{ username: "solera@solera.com", password: "solera" }];
     const handleSubmit = (e) => {
+
     e.preventDefault();
     const account = users.find((user) => user.username === username);
     if (account && account.password === password) {
-    
+      // props.validacion=true;
+      props.validacion(true);
     navigate("/menu");
+  
+
+    }else{
+      alert("Error de usuario")
     }
     };
     return (

@@ -9,7 +9,7 @@ import { Navigate, useNavigate} from 'react-router-dom';
 
         
 
-export default function Menu(){
+export default function Menu(props){
 
     // const [nombre, setImageUrl] = useState(null);
     // const [Email, setEmail] = useState(null);
@@ -92,9 +92,7 @@ export default function Menu(){
 
         const navigate = useNavigate();
         
-        if ( localStorage.getItem("authenticated")==false) {
-           navigate("/")
-        } else {
+        
           if(getUsers!=null){
     return(
         <>
@@ -148,9 +146,9 @@ export default function Menu(){
         
         <Cliente todos={getUsers}></Cliente>
         </div>
-        <FooterMio></FooterMio>
+        <FooterMio validacion={props.validacion}></FooterMio>
         </>
     );
     }
-}
+
 }
