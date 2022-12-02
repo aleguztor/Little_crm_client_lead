@@ -41,10 +41,12 @@ h2{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  
      background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .form-menu button{
     border: none;
@@ -65,12 +67,12 @@ h2{
     box-shadow:inset 5px 5px 10px rgba(0, 0, 0, 0.182);
     border-radius: 10px;
     padding: 5px;
-    width: 100%;
+    width: 250px;
     height: 20px;
   }
   .form-menu label{
 padding: 10px;
-width: 60%;
+width: fit-content;
   }
   .containermenu{
     display: flex;

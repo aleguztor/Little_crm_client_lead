@@ -56,7 +56,7 @@ public class UserImplementation implements UserService{
 	public User userChangeToClient(User user,String tipoDeCliente) {
 		userRepository.delete(user);
 	user.setCliente(true);
-	user.setOportunityType(tipoDeCliente);
+	user.setClientType(tipoDeCliente);
 	
 		 return userRepository.save(user);
 	}

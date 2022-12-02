@@ -32,8 +32,9 @@ export default function Cliente(props){
             </div>
             <div className='contacto-lista'>
             <h4>Tipo de Cliente</h4>
-            <h5> {element.clientType}</h5>
-          
+            <div className='oportunidad'>
+            <h5 > {element.clientType}</h5>
+            </div>
             </div>
             <button id='deletebuton' type="button"> ELIMINAR CLIENTE</button>
         </div>

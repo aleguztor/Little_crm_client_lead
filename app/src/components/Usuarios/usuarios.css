@@ -29,6 +29,7 @@
     color: aliceblue;
 }
 .contacto-lista{
+    
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -36,8 +37,17 @@
     margin-bottom: 5px;
     border: 10px black;
     align-items: center;
-    border: 10px;
+    
+   
 
+
+}
+.oportunidad{
+    width: 220px;
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: pre-wrap; 
+
+    
 }
 .contacto-lista button{
     background-color: black;

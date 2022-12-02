@@ -54,10 +54,11 @@ export default function Oportunidades(props){
     <h5>{element.tlf}</h5>
   
     </div>
-    <div className='contacto-lista'>
+    <div className='contacto-lista '>
     <h4>Oportunidad</h4>
-    <h5>{element.oportunityType}</h5>
-  
+    <div className='oportunidad'>
+    <h5 >{element.oportunityType}</h5>
+    </div>
     </div>
     <form  onSubmit={handleSubmit} >
     <input type="text" ref={ref} style={{visibility: "hidden"}}  defaultValue={`${element.id}`}  />
