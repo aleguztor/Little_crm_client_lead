@@ -1,0 +1,1 @@
+INSERT INTO LOGGERS VALUES (1,'solera@solera.com',FALSE,'solera')
